@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <p> Essa tag picture parece uma imagem: img src=
+            tem varias sources dentro, permite voce
+            criar varios sources, varias fontes  
+            vai aparecer uma imagem, qual imagem ?
+            voce escolhe como abaixo:
+            dentro da tag picture voce voce escolhe a tag source
+            media max 1000px e srcset a outra foto pra varia o tamanho
+            voce para parar de rolagem voce cria acima da outra source,
+            uma outra source media type, sempre a medida max-width com folga na medida, serve para abrir em um celular , um pc, ou uma tv
+        </p>
+        <source media="(max-width:750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    
+</body>
+</html>
