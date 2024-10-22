@@ -7,10 +7,22 @@
     <style>
         body {
             height: 100vh ;
-            background-color: black ;
+           /* background-color: black ;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+           
+            /* shorthand background - ordem
+             1º color - 2º image - 3º position
+             4º repeat - 5º {size}, ainda nao esta funcionando
+             6º attachement
+              
+            */
+
+            background: black url('imagens/wallpaper002.jpg')
+            center center no-repeat fixed;
             background-size: cover;
         }
         main {
