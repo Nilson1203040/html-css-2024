@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;  /* para juntar tudo   */
+            width: 300px; /* largura da tabela   */
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px; /* distancia da borda da tabela */ 
+            text-align: center;          
+        }
+        /*  <td colspan="2">B</td> faz o B ocupar 2 colunas
+        quando eu tirei o C, ocupou os dois espaços 
+        Vou tirar o G e O J, e fazer o F, ocupar 3 lugare
+        <td rowspan="3">F</td>, tiro o G e o J, novamente
+        e faço no D, <td rowspan="3">D</td>, ele ocupa 3
+        espaços a esquerda da tabela, sao tipos de mesclagem
+         agora vou ficar o F, ocupar 2 linhas, vamos tirar
+         o I,e fazer o F fica em 2 linhas, vou pegar o F
+         <td rowspan="2">F</td>, tirei o L, o M vai ocupar
+         2 posiçoes, <td colspan="2">M</td>, expandir
+         linhas e colunas */
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de tabelas</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> 
+            
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            
+            
+            <td>H</td>
+            
+        </tr>
+        <tr>
+            
+           
+            <td colspan="2">M</td>
+        </tr>
+    </table>
+</body>
+</html>
